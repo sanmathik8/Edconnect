@@ -1,0 +1,41 @@
+# Basics
+.DS_Store
+*.log
+*.sqlite3
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Python / Django
+backend/venv/
+backend/.venv/
+backend/.env
+backend/local_settings.py
+backend/db.sqlite3
+backend/media/
+*.pot
+*.pyc
+*.pyo
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.vercel
+
+# General
+.env

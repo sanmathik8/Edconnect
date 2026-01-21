@@ -1,0 +1,16 @@
+Django>=5.0.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.3.0
+channels>=4.0.0
+daphne>=4.0.0
+Pillow>=10.0.0
+python-dotenv>=1.0.0
+better-profanity>=0.7.0
+psycopg2-binary>=2.9.0
+# AI Dependencies (Optional for basic runs, required for AI features)
+torch
+transformers
+numpy
+itemadapter
+
+Twisted[tls,http2]>=23.8.0
