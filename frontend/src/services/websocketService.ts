@@ -16,7 +16,9 @@ export class WebSocketService {
 
         this.threadId = threadId;
         const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-        const host = 'localhost:8000'; // Should be env var in prod
+        // Get host from env, stripping http/https/trailing slashes
+        const apiBase = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+        const host = apiBase.replace(/^https?:\/\//, '').split('/')[0];
         const wsUrl = `${protocol}//${host}/ws/chat/${threadId}/`;
 
         this.socket = new WebSocket(wsUrl);

@@ -12,5 +12,7 @@ torch
 transformers
 numpy
 itemadapter
+whitenoise
+dj-database-url
 
 Twisted[tls,http2]>=23.8.0

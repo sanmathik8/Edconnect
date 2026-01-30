@@ -7,25 +7,22 @@ const nextConfig: NextConfig = {
       {
         protocol: "http",
         hostname: "localhost",
-        port: "8000",
-        pathname: "/**",
-      },
-      {
-        protocol: 'https',
-        hostname: 'api.dicebear.com',
-        pathname: '/**',
       },
       {
         protocol: "http",
         hostname: "127.0.0.1",
-        port: "8000",
-        pathname: "/**",
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.dicebear.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**', // Allow external images from CDNs/Cloudinary
       },
     ],
   },
-  env: {
-    NEXT_PUBLIC_API_URL: "http://localhost:8000/api",
-  },
+  // env: { NEXT_PUBLIC_API_URL } is NOT needed, Next.js picks it up automatically from .env
 };
 
 export default nextConfig;
